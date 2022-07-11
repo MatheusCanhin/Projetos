@@ -55,7 +55,7 @@ class JogoDaVelha():
         print("└───┴───┴───┘")
 
     def jogar_novamente(self):
-        '''Verifica se os jogadores quem jogar novamente'''
+        """Verifica se os jogadores quem jogar novamente"""
 
         self.placar()
         repetir = input("Deseja jogar novamente(S/N)? ").strip().upper()
@@ -71,7 +71,7 @@ class JogoDaVelha():
             exit()
 
     def verificar_vitoria(self):
-        '''Verifica todas as formas de ocorrer vitória'''
+        """Verifica todas as formas de ocorrer vitória"""
 
         # Verificando Linhas:
         if self.tabuleiro['7'] == self.tabuleiro['8'] == self.tabuleiro['9'] != ' ':
@@ -109,7 +109,7 @@ class JogoDaVelha():
             f"\U00002B55 = {self.o_ganha} | \U0000274C {self.x_ganha} | \U0001F512 {self.velha}\n")
 
     def jogar(self):
-        '''Inicia o jogo da velha'''
+        """Inicia o jogo da velha"""
 
         print("\n---BEM VINDO(A) AO JOGO DA VELHA---\n")
         print("Essas são as possiveis jogadas:\n")
@@ -150,7 +150,6 @@ class JogoDaVelha():
                     self.jogar_novamente()
                 else:
                     self.turno = "X" if self.turno == "O" else "O"
-
         else:
             print("\nAté a próxima!")
 
