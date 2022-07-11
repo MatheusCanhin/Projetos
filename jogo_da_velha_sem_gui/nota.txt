@@ -1,0 +1,2 @@
+Este é um programa, que cria um jogo da velha no terminal, não possui uma GUI.
+Foi criado apenas para treinar a lógica e POO.
